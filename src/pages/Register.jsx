@@ -6,7 +6,6 @@ import { logIn } from '../features/auth/authSlice';
 import store from "../app/store"
 
 const Register = () => {
-  // const logged = useSelector(selectState);
   const dispatch = useDispatch();
   const URL = 'https://c-sport.tk';
   const CORS_SKIP = 'https://cors.bridged.cc/';
