@@ -13,7 +13,7 @@ const Home = () => {
     const postQuestion = (event) => {
         event.preventDefault();
         axios
-            .post(`${constants.URL}/api/question/`)
+            .post(`${constants.URL}/api/question/`, text)
             .then((res) => console.log(res))
             .catch((err) => console.log(err));
     }
@@ -26,7 +26,7 @@ const Home = () => {
             </div>
             <div className="question-box">
                 <h2>Ask your Question!</h2>
-                <textarea name="" id="" cols="30" rows="20" onChange={question}></textarea>
+                <textarea name="" id="" cols="40" rows="20" onChange={question}></textarea>
                 <button onClick={postQuestion}>Post your question</button>
             </div>
         </div>

@@ -46,10 +46,18 @@ input {
   text-align: center;
   text-decoration: none;
   width: 90%;
+  cursor: pointer;
 }
 
 .checkboxes {
   display: flex;
   justify-content: center;
   align-content: center;
+}
+
+.checkboxes input,
+.checkboxes p {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
 }

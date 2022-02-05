@@ -15,9 +15,8 @@ export const authSlice = createSlice({
     },
   }
 });
-console.log(authSlice)
 export const { logIn } = authSlice.actions;
-
+console.log("authSlice", authSlice)
 // Selectors can also be defined inline where they're used instead of
 // in the slice file. For example: `useSelector((state: RootState) => state.counter.value)`
 export const selectState = (state) => state.isLoggedIn;

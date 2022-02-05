@@ -13,14 +13,14 @@ const Login = () => {
         password: ""
     })
 
-    // const enter = (event) => {
-    //         event.preventDefault();
-    //         axios
-    //             .post(`${constants.URL}/api/users/auth/login/`)
-    //             .then((res) => console.log(res))
-    //             .catch((err) => console.log(err));
-    //       dispatch(logIn({value: details.email}))
-    // }
+    const enter = (event) => {
+        //     event.preventDefault();
+            axios
+                .post(`${constants.URL}/api/users/auth/login/`)
+                .then((res) => console.log(res))
+                .catch((err) => console.log(err));
+        //   dispatch(logIn({value: details.email}))
+    }
 
     return(
         <div className="login-screen">
@@ -28,7 +28,7 @@ const Login = () => {
                 <p className="icon">Lottery display</p>
                 <h2>A few clicks from creating your Lottery Display</h2>
             </div>
-            
+
             <div className="other-part">
                 <h3>Login to your account</h3>
                 <p>Thank you for logging in</p>
@@ -55,10 +55,10 @@ const Login = () => {
                         />
                     </label>
                     <div className="checkboxes">
-                        <input type="checkbox" name="" id="remember"/>
+                        <input type="checkbox" name="remember"/>
                         <p>Remember Me</p>
                     </div>
-                    <Link to="/home" className="login-button"><button type="submit">Login</button></Link>
+                    <Link to="/home" onClick={enter} className="login-button"><button type="submit">Login</button></Link>
 
                     <p>Don't have an account? <Link to="/register">Register</Link></p>
                 </form>

@@ -1,18 +1,17 @@
 import React from 'react';
 import Register from './pages/Register';
+import Login from './pages/Login';
 import './App.css';
 import { useSelector } from 'react-redux';
 import { selectState } from './features/auth/authSlice';
-import Home from './pages/Home'
-import Login from './pages/Login';
 
 function App() {
   const logged = useSelector(selectState);
+  console.log("logged",logged)
 
   return (
     <div className="App">
-      {/* {logged ? <Home/> : <Register />} */}
-      {logged ? <Login/> : <Register />}
+      {logged ? <Login /> : <Register />}
     </div>
   );
 }

@@ -32,7 +32,6 @@ const Register = () => {
                 .post(`${constants.URL}/api/users/auth/register/`, formData, config) //! destructure object inside post request?
                 .then((res) => console.log(res))
                 .catch((err) => console.log(err));
-          // replace decrement with action that updates user details and changes isLoggedIn to true
           dispatch(logIn({value: formData.last_name}))
           console.log("wetin dey d state:",store.getState())
         };
