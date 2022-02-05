@@ -1,0 +1,9 @@
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.profile img {
+  border-radius: 50%;
+}

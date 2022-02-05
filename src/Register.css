@@ -1,0 +1,39 @@
+.register-screen {
+  width: 100%;
+  display: flex;
+}
+
+.blue-part {
+  width: 40%;
+  height: 100vh;
+  background: rgb(25, 143, 253);
+  color: white;
+}
+
+.register-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: left;
+  padding: 1rem 2rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin: 0.5rem;
+  height: 2rem;
+  border-radius: 10px;
+  border: solid 0.1px;
+}
+
+button {
+  background: rgb(25, 143, 253);
+  color: white;
+  border-radius: 5px;
+  display: block;
+  /* padding: 0.5rem 1rem; */
+  border: none;
+  font-size: 1.3rem;
+}
