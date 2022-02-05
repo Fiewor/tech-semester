@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../Register.css';
-import { useSelector, useDispatch } from 'react-redux';
-import { logIn, selectState } from '../auth/authSlice';
+import { useDispatch } from 'react-redux';
+import { logIn } from '../features/auth/authSlice';
 import store from "../app/store"
 
 const Register = () => {
@@ -25,7 +25,6 @@ const Register = () => {
     password1: '',
     password2: ''
   });
-  console.log("wetin dey d state:",store.getState())
   console.log(formData)
     // useEffect(() => {
       const create = (event) => {
@@ -35,7 +34,8 @@ const Register = () => {
                 .then((res) => console.log(res))
                 .catch((err) => console.log(err));
           // replace decrement with action that updates user details and changes isLoggedIn to true
-          dispatch(logIn())
+          dispatch(logIn({value: formData.last_name}))
+          console.log("wetin dey d state:",store.getState())
         };
     // }, []);
 

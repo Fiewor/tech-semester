@@ -1,8 +1,10 @@
+import React from "react";
+
 const Home = () => {
     return(
         <div>
             <div class="profile">
-                <img src=""></img>
+                {/* <img src=""></img> */}
                 <p>Abdusalam Fatai</p>
             </div>
             <h2>Ask your Question!</h2>

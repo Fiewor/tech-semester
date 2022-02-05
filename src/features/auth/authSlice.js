@@ -8,16 +8,14 @@ const initialState = {
 export const authSlice = createSlice({
   name: 'auth',
   initialState,
-  // The `reducers` field lets us define reducers and generate associated actions
   reducers: {
-    // Use the PayloadAction type to declare the contents of `action.payload`
     logIn: (state, action) => {
       state.user = action.payload.value;
       state.isLoggedIn = true;
     },
   }
 });
-
+console.log(authSlice)
 export const { logIn } = authSlice.actions;
 
 // The function below is called a selector and allows us to select a value from
