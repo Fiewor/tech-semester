@@ -28,9 +28,11 @@ const Login = () => {
                 <p className="icon">Lottery display</p>
                 <h2>A few clicks from creating your Lottery Display</h2>
             </div>
+            
             <div className="other-part">
                 <h3>Login to your account</h3>
                 <p>Thank you for logging in</p>
+
                 <form className="login-form">
                     <label>Username
                         <input

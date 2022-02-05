@@ -56,20 +56,25 @@ const Register = () => {
         <form className="register-form">
             <label>First Name
                 <input
+                  className="register-input"
                   type="text"
                   name="firstName"
                   onChange={(e) => setFormData({ ...formData, first_name: e.target.value })}
+                  required
                 />
             </label>
             <label>Last Name
                 <input
+                  className="register-input"
                   type="text"
                   name="lastName"
                   onChange={(e) => setFormData({ ...formData, last_name: e.target.value })}
+                  required
                 />
             </label>
             <label>Phone Number
                 <input
+                  className="register-input"
                   type="tel"
                   name="number"
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -77,6 +82,7 @@ const Register = () => {
             </label>
             <label>Email
                 <input
+                  className="register-input"
                   type="email"
                   name="email"
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -84,16 +90,20 @@ const Register = () => {
             </label>
             <label>Password
                 <input
+                  className="register-input"
                   type="password"
                   name="password1"
                   onChange={(e) => setFormData({ ...formData, password1: e.target.value })}
+                  required
                 />
             </label>
             <label>Confirm password
                 <input
+                  className="register-input"
                   type="password"
                   name="password2"
                   onChange={(e) => setFormData({ ...formData, password2: e.target.value })}
+                  required
                 />
             </label>
 

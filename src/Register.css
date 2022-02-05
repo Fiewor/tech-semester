@@ -12,23 +12,23 @@
 
 .other-part {
   margin: 0.5rem;
-  padding: 0.5rem;
+  padding: 1rem 2rem;
 }
 
 .register-form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 1rem 2rem;
   text-align: left;
-  padding: 1rem 2rem;
+  padding: 2rem 1rem 1rem 0;
 }
 
-input {
+.register-input {
   display: block;
   width: 100%;
   margin: 0.5rem;
-  height: 2rem;
+  /* height: 2rem; */
   border-radius: 10px;
   border: solid 0.1px;
 }
