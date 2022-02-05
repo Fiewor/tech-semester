@@ -1,6 +1,8 @@
 .login-screen {
   width: 100%;
   display: flex;
+  flex-direction: row;
+  justify-content: stretch;
 }
 
 .blue-part {
@@ -10,9 +12,13 @@
   color: white;
 }
 
+.other-part {
+  width: 60%;
+}
+
 .login-form {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: 1rem;
   text-align: left;
@@ -26,19 +32,23 @@ input {
   height: 2rem;
   border-radius: 10px;
   border: solid 0.1px;
+  padding: 0 0.5rem;
 }
 
-button {
+.login-button {
   background: rgb(25, 143, 253);
   color: white;
   border-radius: 5px;
   display: block;
-  /* padding: 0.5rem 1rem; */
+  padding: 0.5rem 0;
   border: none;
   font-size: 1.3rem;
+  text-align: center;
+  text-decoration: none;
 }
 
 .checkboxes {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-content: center;
 }

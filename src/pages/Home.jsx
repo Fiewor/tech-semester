@@ -9,7 +9,7 @@ const Home = () => {
         setText(event.target.value)
     }
 
-    const post = (event) => {
+    const postQuestion = (event) => {
         event.preventDefault();
         axios
             .post(`${constants.URL}/api/question/`)
@@ -25,7 +25,7 @@ const Home = () => {
             </div>
             <h2>Ask your Question!</h2>
             <textarea name="" id="" cols="30" rows="10" onChange={question}></textarea>
-            <button onClick={post}>Post your question</button>
+            <button onClick={postQuestion}>Post your question</button>
         </div>
     )
 }

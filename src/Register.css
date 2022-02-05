@@ -10,6 +10,11 @@
   color: white;
 }
 
+.other-part {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
 .register-form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

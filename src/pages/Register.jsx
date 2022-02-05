@@ -25,7 +25,6 @@ const Register = () => {
     password1: '',
     password2: ''
   });
-  console.log(formData)
     // useEffect(() => {
       const create = (event) => {
             event.preventDefault();
@@ -45,7 +44,8 @@ const Register = () => {
         <p className="icon">Lottery display</p>
         <h2>A few clicks from creating your Lottery Display</h2>
       </div>
-      <div>
+
+      <div className="other-part">
 
         <h3>Register</h3>
         <h4>Manage all your lottery efficiently</h4>
@@ -110,7 +110,7 @@ const Register = () => {
             <button type="submit" className="register-button" onClick={create}>
             Create Account
             </button>
-            <p>Already have an account? <Link  to="/Login">Log In</Link></p>
+            <p>Already have an account? <Link  to="/login">Log In</Link></p>
         </form>
       </div>
 
