@@ -7,3 +7,9 @@
 .profile img {
   border-radius: 50%;
 }
+
+button {
+  border-radius: 5px;
+  background: rgb(25, 143, 253);
+  color: white;
+}

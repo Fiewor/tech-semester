@@ -4,11 +4,12 @@ import '../Register.css';
 import { useDispatch } from 'react-redux';
 import { logIn } from '../features/auth/authSlice';
 import store from "../app/store"
+import * as constants from '../constants'
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const dispatch = useDispatch();
-  const URL = 'https://c-sport.tk';
-  const CORS_SKIP = 'https://cors.bridged.cc/';
+
   const config = {
     headers:{
         "Access-Control-Allow-Origin": "*",
@@ -29,7 +30,7 @@ const Register = () => {
       const create = (event) => {
             event.preventDefault();
             axios
-                .post(`${URL}/api/users/auth/register/`, formData, config) //! destructure object inside post request?
+                .post(`${constants.URL}/api/users/auth/register/`, formData, config) //! destructure object inside post request?
                 .then((res) => console.log(res))
                 .catch((err) => console.log(err));
           // replace decrement with action that updates user details and changes isLoggedIn to true
@@ -104,7 +105,7 @@ const Register = () => {
             <button type="submit" className="register-button" onClick={create}>
             Create Account
             </button>
-            <p>Already have an account? Log In</p>
+            <p>Already have an account? <Link  to="/Login">Log In</Link></p>
         </form>
       </div>
 

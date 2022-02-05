@@ -12,8 +12,8 @@ function App() {
   return (
     <div className="App">
       <Register />
-      console.log(logged)
-      {logged && <Home/>}
+      {console.log(logged)}
+      {/* {logged && <Home/>} */}
     </div>
   );
 }
