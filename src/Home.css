@@ -1,15 +1,30 @@
+.ask-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .profile {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin: 1rem 0;
 }
 
 .profile img {
   border-radius: 50%;
 }
 
+.question-box textarea {
+  padding: 2vw 10vw;
+}
+
 button {
   border-radius: 5px;
   background: rgb(25, 143, 253);
   color: white;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
 }
