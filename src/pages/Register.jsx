@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import '../Register.css';
 import { useDispatch } from 'react-redux';
@@ -97,10 +97,15 @@ const Register = () => {
                 />
             </label>
 
-            <input type="checkbox" name="" id=""/>
-            <p>Yes, I want to recieve Lottery Display emails</p>
-            <input type="checkbox" name="" id=""/>
-            <p>I agree to all the Terms, Privacy Pollicy and Fees</p>
+            <div className="checkboxes">
+              <input type="checkbox" name="" id=""/>
+              <p>Yes, I want to recieve Lottery Display emails</p>
+            </div>
+
+            <div className="checkboxes">
+              <input type="checkbox" name="" id=""/>
+              <p>I agree to all the Terms, Privacy Pollicy and Fees</p>
+            </div>
 
             <button type="submit" className="register-button" onClick={create}>
             Create Account

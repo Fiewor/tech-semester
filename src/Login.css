@@ -1,4 +1,4 @@
-.register-screen {
+.login-screen {
   width: 100%;
   display: flex;
 }
@@ -10,10 +10,10 @@
   color: white;
 }
 
-.register-form {
+.login-form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: auto;
   gap: 1rem;
   text-align: left;
   padding: 1rem 2rem;
@@ -33,6 +33,7 @@ button {
   color: white;
   border-radius: 5px;
   display: block;
+  /* padding: 0.5rem 1rem; */
   border: none;
   font-size: 1.3rem;
 }

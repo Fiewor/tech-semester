@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import axios from 'axios';
-import * as constants from '../constants'
+import * as constants from '../constants';
 
 const Home = () => {
     const [text, setText] = useState("")
