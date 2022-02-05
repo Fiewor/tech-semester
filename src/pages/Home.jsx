@@ -19,7 +19,7 @@ const Home = () => {
 
     return(
         <div>
-            <div class="profile">
+            <div className="profile">
                 {/* <img src=""></img> */}
                 <p>Abdusalam Fatai</p>
             </div>
